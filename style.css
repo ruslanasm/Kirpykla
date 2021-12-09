@@ -584,7 +584,7 @@ color: var(--primaryWhite);
  display: flex;
  flex: 1 1 30rem;
  flex-wrap: wrap;
- gap: 5px;
+ gap: 6px;
  text-align: center;
  }
 
@@ -599,7 +599,6 @@ color: var(--primaryWhite);
  text-align: center;
  box-shadow: var(--boxShadow);
  border: 1px solid var(--primaryWhite);
- border-radius: 2px;
  }
 
 
