@@ -92,6 +92,15 @@ background-repeat: no-repeat;
 background-position: center;
 }
 
+
+@keyframes  fade {
+  0%{
+   opacity: 0;
+   transform: translateY(-4rem) scale(.4);
+  }
+}
+
+
 /*--btn--*/
  .btn {
  display: inline-block;
@@ -99,14 +108,14 @@ background-position: center;
  color: var(--primaryWhite);
  font-size: 1rem;
  text-decoration: none;
- border-radius: 3px;
+ border-radius: 1px;
  border: 1px solid var(--secondaryColor);
  outline: none;
  box-shadow: inset 0 0 0 0 #111;
  }
 
  .btn:hover{
- transition: all .3s ease;
+ transition: all .5s ease;
  color: var(--primaryWhite);
  background-color: var(--secondaryColor);
  }
@@ -128,10 +137,11 @@ justify-content: space-between;
 
 .header .navbar a {
 margin: 0 1rem;
-font-size: 1.5rem;
+font-size: 1.3rem;
 color: var(--primaryBlack);
 text-decoration: none;
 text-transform: uppercase;
+font-style: italic;
 }
 
 
@@ -146,6 +156,9 @@ text-transform: uppercase;
 
 .header .logo{
  text-decoration: none;
+ font-style: italic;
+ font-weight: bold;
+ letter-spacing: .1rem;
 }
 
 
@@ -199,6 +212,7 @@ z-index: -0;
 .home .btn{
  color: var(--primaryWhite);
  font-size: 1.4rem;
+ animation: fade .7s linear backwards .4s;
 }
 
 
@@ -224,6 +238,7 @@ display: none;
  letter-spacing: .5rem;
  text-transform: uppercase;
  font-family: 'Dancing Script', cursive;
+ animation: fade .4s linear backwards .4s;
 }
 
 .content h1 span {
@@ -241,6 +256,7 @@ letter-spacing: .2rem;
 padding-bottom: 1rem;
 max-width: 400px;
 font-family: 'Dancing Script', cursive;
+animation: fade .6s linear backwards .4s;
 }
    
 
@@ -256,7 +272,6 @@ font-family: 'Dancing Script', cursive;
  color: var(--secondaryColor);
  border: var(--border);
  background: var(--primaryWhite);
- opacity: .5;
  border-radius: 2rem;
  cursor: pointer;
  text-align: center;
@@ -270,11 +285,13 @@ font-family: 'Dancing Script', cursive;
  #prev-slide:hover{
   background:var(--secondaryColor);
   color: var(--primaryWhite);
+  transition: all .5s ease;
  }
 
  #next-slide:hover{
  background: var(--secondaryColor);
  color: var(--primaryWhite);
+ transition: all .5s ease;
  }
 
  /*--end home--*/
@@ -284,6 +301,12 @@ font-family: 'Dancing Script', cursive;
  padding-top: 9rem;
  color: var(--primaryWhite);
  background: var(--primaryBlack);
+ background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .8) 100%),
+ url(./images/background.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
  }
 
 
@@ -433,6 +456,12 @@ font-family: 'Dancing Script', cursive;
  .pricing{
  padding-top: 6rem;
  background: var(--primaryBlack);
+ background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .8) 100%),
+ url(./images/background.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
  }
 
  .pricing .box-container img {
@@ -557,7 +586,7 @@ color: var(--primaryWhite);
  .gallery .photo-container .box{
  display: flex;
  flex-wrap: wrap;
- flex: 1 1 30rem;
+ flex: 1 1 20rem;
  position: relative;
  align-items: flex-end;
  justify-content: center;
@@ -577,7 +606,7 @@ color: var(--primaryWhite);
 
 
  .gallery .photo-container img:hover{
- transform: scale(1.2);
+ transform: scale(1.1);
  transition: all .5s ease;
  }
 
@@ -603,7 +632,7 @@ color: var(--primaryWhite);
 
 
  .gallery .photo-container .box .content{
-  font-size: 2.7rem;
+  font-size: 2rem;
  }
 
  .gallery .photo-container .box .content a{
@@ -641,6 +670,12 @@ color: var(--secondaryColor);
  padding-top: 5rem;
  background: #000;
  color: var(--primaryWhite);
+ background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .8) 100%),
+ url(./images/background.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
  }
 
  .contact .heading{
@@ -888,6 +923,35 @@ padding: 2rem;
     text-align: center;
     letter-spacing: .1rem;
     }
+
+
+    .gallery .photo-container .box .content{
+      position: absolute;
+      bottom: -100%;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       text-align: center;
+       background: rgba(0, 0, 0, .8);
+       text-align: center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       transition: all .7s ease;
+      }
+
+      .gallery .photo-container .box .content{
+        font-size: 2.5rem;
+       }
+
+
+       
+ .gallery .photo-container img:hover{
+  transform: scale(1);
+  transition: all .5s ease;
+  }
+ 
+     
 
     .pricing .box-container {
      grid-template-columns: 1fr;
