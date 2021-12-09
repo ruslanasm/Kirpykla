@@ -351,7 +351,7 @@ animation: fade .6s linear backwards .4s;
  .services .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 7px;
+  gap: 10px;
  }
 
  .services .box-container .box{
@@ -361,9 +361,17 @@ animation: fade .6s linear backwards .4s;
   border-radius: .2rem;
  }
 
+
+
  .services .box-container .box img {
   height: 8rem;
   margin-bottom: .6rem;
+
+ }
+
+ .services .box-container .box img:hover{
+  transform: translateY(-.5rem);
+  transition: all .4s ease;
  }
 
  .services h3 {
