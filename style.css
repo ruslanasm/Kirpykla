@@ -1012,7 +1012,7 @@ padding: 2rem;
   .services .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 10px;
+    gap: 6px;
    }
   
 
