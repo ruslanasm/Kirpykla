@@ -241,6 +241,7 @@ display: none;
  text-transform: uppercase;
  font-family: 'Dancing Script', cursive;
  animation: fade .4s linear backwards .4s;
+ margin-bottom: 1rem;
 }
 
 .content h1 span {
@@ -643,17 +644,11 @@ color: var(--primaryWhite);
  cursor: pointer;
  }
 
- .gallery .photo-container .box .content .fa-thumbs-up{
- color: rgb(64, 64, 207);
- }
-
  .gallery .photo-container .box .content .fa-thumbs-up:hover{
  color: var(--secondaryColor);
  }
 
- .gallery .photo-container .box .content .fa-heart{
- color: rgb(221, 59, 59);
- }
+ 
 
  .gallery .photo-container .box .content .fa-heart:hover{
 color: var(--secondaryColor);
