@@ -248,32 +248,33 @@ font-family: 'Dancing Script', cursive;
  #next-slide,
  #prev-slide {
  position: absolute;
- bottom: 2rem; right: 2rem;
+ bottom: 4rem; right: 3rem;
  height: 4rem;
  width: 4rem;
  line-height: 4rem;
  font-size: 3rem;
- color: var(--primaryBlack);
+ color: var(--secondaryColor);
  border: var(--border);
  background: var(--primaryWhite);
- border-radius: .5rem;
+ opacity: .5;
+ border-radius: 2rem;
  cursor: pointer;
  text-align: center;
  z-index: 1;
  }
 
 #prev-slide {
- right: 7rem;
+ right: 8rem;
 }
 
  #prev-slide:hover{
-  background:var(--primaryBlack);
-  color: var(--secondaryColor);
+  background:var(--secondaryColor);
+  color: var(--primaryWhite);
  }
 
  #next-slide:hover{
- background: var(--primaryBlack);
- color: var(--secondaryColor);
+ background: var(--secondaryColor);
+ color: var(--primaryWhite);
  }
 
  /*--end home--*/
