@@ -139,7 +139,7 @@ text-transform: uppercase;
  color: var(--secondaryColor);
 }
 
-.header .navbar .color{
+.header .navbar .fa-chevron-circle-right{
  color: var(--secondaryColor);
 }
 
@@ -814,8 +814,6 @@ font-size: 65%;
 .header{
 padding: 2rem;
 }
-
-
     
 }
 
@@ -856,8 +854,9 @@ padding: 2rem;
     display: block;
     font-size: 2.1rem;
     margin: 0;
-    padding: 1rem 1.5rem;
+    padding: 1rem 0;
     font-weight: 500;
+    color: var(--primaryBlack);
     }
 
 
