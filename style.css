@@ -176,10 +176,7 @@ font-weight: bolder;
  display: none;
 }
 
-#menu-btn:hover{
-transform: scale(1.1);
-color: var(--secondaryColor);
-}
+
 
 /*--end header*/
 
