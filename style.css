@@ -355,7 +355,7 @@ animation: fade .6s linear backwards .4s;
  }
 
  .services .box-container .box{
-  background: var(--primaryWhite);
+  background: rgba(255, 255, 255, 0.116);
   padding: 3rem 2rem;
   text-align: center;
   border-radius: .2rem;
@@ -366,11 +366,10 @@ animation: fade .6s linear backwards .4s;
  .services .box-container .box img {
   height: 8rem;
   margin-bottom: .6rem;
-
  }
 
  .services .box-container .box img:hover{
-  transform: translateY(-.5rem);
+  transform: translateY(-.8rem);
   transition: all .4s ease;
  }
 
@@ -381,10 +380,11 @@ animation: fade .6s linear backwards .4s;
  color: var(--secondaryColor);
  }
 
+
  .services p{
   line-height: 2rem;
   font-size: 1.2rem;
-  color: var(--primaryBlack);
+  color: var(--primaryWhite);
  }
 
  .services h1 {
