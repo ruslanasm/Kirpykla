@@ -63,7 +63,7 @@ margin-bottom: 3rem;
 
 html {
 overflow-x: hidden;
-font-size: 70%;
+font-size: 65%;
 scroll-padding-top: 7rem;
 scroll-behavior: smooth;
 }
@@ -334,6 +334,10 @@ animation: fade .6s linear backwards .4s;
  .about .container img {
  width: 100%;
  animation: fadeIn 4s linear infinite;
+ }
+
+ .about .heading h2 {
+  color: var(--primaryWhite);
  }
 
  /*--end about--*/
