@@ -837,6 +837,7 @@ justify-content: center;
  text-align: center;
  padding: 2rem;
  font-size: 1rem;
+ background: #111;
  color: var(--primaryWhite);
  }
 
